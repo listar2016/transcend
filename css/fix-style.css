@@ -1,0 +1,23 @@
+.tb-img {
+    height: 167px !important;
+}
+.tb-img img {
+    height: 100%;
+}
+#topnav {
+    position: initial;
+}
+.content {
+    margin: 2rem auto;
+    padding: 0px 5px;
+}
+.card-body { 
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.bg-custom {
+    background-color: #FDB402 !important
+}
+.navbar-brand {
+    font-size: 14px;
+}

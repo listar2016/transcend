@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/simple-sidebar.css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+
+<style>
+    .bg-lighten-secondary{
+        background-color: #F1F1F1;
+    }
+    .card{
+        margin-top: unset !important;
+    }
+    .header-nav{
+        padding: 2.6rem 3rem 3.6rem 3.6rem;
+
+    }
+     .float-left {
+        float: left !important;
+
+     }
+
+    .select{
+        margin-top: 6px;
+        border-radius: 10px;
+        border-color: #0b0b0b;
+        background-color: #fdb402;
+    }
+ .card{
+     background-color: #eee;
+ }
+
+
+@media (max-width: 1280px) {
+    .content {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 980px)  {
+#topnav .navigation-menu > li > a {
+    padding: 6px 15px;
+}
+}
+
+@media (max-width: 900px)   {
+    .mt-0.header-title {
+        margin-left: 38% !important;
+    }
+}
+
+
+@media (max-width: 900px)  {
+    .card {
+    padding-top: 35px;
+}
+}
+
+ @media (max-width: 767px){
+
+.col-md-6.float-left {
+
+    max-width: 100% !important;
+
+}
+.mt-0.header-title {
+
+    margin-left: 8px !important;
+    text-align: center !important;
+
+}
+ }
+ @media (max-width: 603px){
+. {
+    margin-top: 105px;
+    width: 433px !important;
+}
+ .float-rightt {
+    margin-top: 21px;     }
+    .form-group.row {
+
+    margin-bottom: 0;
+
+}
+
+.btn.btn-lg.btn-warning.waves-effect.waves-light.text-dark.btnT {
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+ }
+
+  @media (max-width: 480px) {
+#topnav .navigation-menu > li > a {
+
+    padding: 6px 1px;
+
+}
+.float-rightt {
+
+    margin-top: 0 !important;
+
+}
+.ff {
+    margin-top: 0px !important;
+}
+#wrapper.toggled .content {
+    max-width: 100%;
+    display: block;
+    clear: both;
+    padding-top: 0;
+    position: relative;
+    margin-top: 165px;
+}
+  }
+
+    @media (max-width: 480px) {
+        #topnav .navigation-menu > li > a {
+    font-size: 10px;
+
+}
+    }
+
+    @media (max-width: 320px)  {
+#topnav .navigation-menu > li > a {
+
+    padding: 6px 0px;
+    font-size: 9px;
+
+}
+    }
+
+
+    @media (min-width: 1200px){
+    . {
+        max-width: unset;
+    }}
+ .BT{
+        height: 37px;
+    margin-top: 201px;
+    background-color: #fdb402;
+    border: unset;
+    color: #212529;
+    }
+    .list-group-item-action {
+    text-align: left !important;
+    }
+    @media (max-width: 576px){
+        .float-rightt{
+            margin-top: 54px;
+        }
+        .ff{
+            margin-top: 34px;
+        }
+    }
+
+</style>
+</head>
+
+<body id="top">
+
+  <header class="s-header" id="topnav">
+
+
+      <div class="tb-img">
+          <div class="wrapper">
+           <img src="img/header@2x.png" style="width: 1537px; height: 161px;">
+          </div>
+          <!-- end  -->
+      </div>
+
+      <div class="navbar-custom">
+          <div class="container-fluid">
+              <div id="navigation">
+
+                  <select class="float-right select" >
+                      <option value="en">en</option>
+                      <option value="ar">ar</option>
+                  </select>
+
+                  <ul class="navigation-menu">
+
+
+                      <li class="submenu float-right" >
+                          <a href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
+
+                      </li>
+                      <li class="submenu float-right">
+                          <a href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
+                      </li>
+                      <li class="submenu  float-left">
+                          <a href="index.html">
+                              <img src="assets/images/admin-ic@2x.png" width="25px" height="25px" />
+                              Hello, Maram Nweiran
+                          </a>
+
+                      </li>
+
+                  </ul>
+
+              </div>
+          </div>
+      </div>
+
+  </header>
+        <div class="d-flex"  id="wrapper">
+        <div class="bg-light border-right" id="sidebar-wrapper" style="margin-top: 198px;">
+            <!-- <div class="sidebar-heading">Start Bootstrap </div> -->
+            <div class="list-group list-group-flush">
+                <a href="jp-admin.html" class="list-group-item list-group-item-action bg-light">Home</a>
+                <a href="jp-provider-settings.html" class="list-group-item list-group-item-action bg-light">Settings payment service providers</a>
+                <a href="jp-add-sub.html" class="list-group-item list-group-item-action bg-light">Add Sub-Agent</a>
+                <a href="jb-editsub.html" class="list-group-item list-group-item-action bg-light">Modify Sub-Agent</a>
+                <a href="jp-reports.html" class="list-group-item list-group-item-action bg-light">Reports</a>
+                <a href="branches.html" class=" list-group-item list-group-item-action bg-light">Branches</a>
+                <a href="jp-fees.html" class="active list-group-item list-group-item-action bg-light">Commissions</a>
+                <a href="trans.html" class="list-group-item list-group-item-action bg-light">Statement</a>
+
+
+            </div>
+          </div>
+            <button class="btn btn-primary BT" id="menu-toggle" style="z-index: 1;background-color: #fdb402;"><i class="fas fa-arrow-right ii"></i></button>
+    <div class="content">
+        <div class="">
+            <div class="row">
+                <div class="col-md-12 bg-box card">
+                        <h4 class="mt-0 header-title" style="padding-top: 20px;margin-left: 43%">ZAIN CASH COMMISSION</h4>
+
+                        <div class="col-md-6 float-right float-rightt">
+                                        <h5 class="mt-0 header-title" style="margin-left: 29%;padding-top: 20px;"> ON THE CLIENT </h5>
+
+                                        <div class="form-group row">
+
+                                            <div class="col-sm-12 m-b-20">
+                                                <input class="form-control" type="number" value="1" id="example-text-input">
+                                            </div>
+
+                                            <div class="col-sm-12 m-b-20 ff">
+                                                <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                            </div>
+
+                                            <div class="col-sm-12 m-b-20 ff">
+                                                <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                            </div>
+                                        </div>
+                        </div> <!-- end col -->
+                        <div class="col-md-6 float-left">
+                                        <h5 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;"> ON THE PROVIDER </h5>
+
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-4 col-form-label">CASH DEPOSIT</label>
+                                            <div class="col-sm-8 m-b-20">
+                                                <input class="form-control" type="number" value="1" id="example-text-input">
+                                            </div>
+                                            <label for="example-text-input" class="col-sm-4 col-form-label">CASH WITHDRAWAL</label>
+                                            <div class="col-sm-8 m-b-20">
+                                                <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                            </div>
+                                            <label for="example-text-input" class="col-sm-4 col-form-label">OPEN A WALLET</label>
+                                            <div class="col-sm-8 m-b-20">
+                                                <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                            </div>
+                                        </div>
+                        </div> <!-- end col -->
+
+                </div>
+                <div class="col-md-12 bg-box card">
+                    <h4 class="mt-0 header-title" style="padding-top: 20px;margin-left: 45%">DINARAK COMMISSION</h4>
+
+                    <div class="col-md-6 float-right float-rightt">
+                                    <h5 class="mt-0 header-title" style="margin-left: 29%;padding-top: 20px;"> ON THE CLIENT </h5>
+
+                                    <div class="form-group row">
+
+                                        <div class="col-sm-12 m-b-20">
+                                            <input class="form-control" type="number" value="1" id="example-text-input">
+                                        </div>
+
+                                        <div class="col-sm-12 m-b-20 ff">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+
+                                        <div class="col-sm-12 m-b-20 ff">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+                                    </div>
+                    </div> <!-- end col -->
+                    <div class="col-md-6 float-left">
+                                    <h5 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;"> ON THE PROVIDER </h5>
+
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">CASH DEPOSIT</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="1" id="example-text-input">
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">CASH WITHDRAWAL</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">OPEN A WALLET</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+                                    </div>
+                    </div> <!-- end col -->
+                </div>
+
+                <div class="col-md-12 bg-box card">
+                    <h4 class="mt-0 header-title" style="padding-top: 20px;margin-left: 46%">AYA COMMISSION	</h4>
+
+                    <div class="col-md-6 float-right float-rightt">
+                                    <h5 class="mt-0 header-title" style="margin-left: 29%;padding-top: 20px;"> ON THE CLIENT </h5>
+
+                                    <div class="form-group row">
+
+                                        <div class="col-sm-12 m-b-20">
+                                            <input class="form-control" type="number" value="1" id="example-text-input">
+                                        </div>
+
+                                        <div class="col-sm-12 m-b-20 ff">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+
+                                        <div class="col-sm-12 m-b-20 ff">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+                                    </div>
+                    </div> <!-- end col -->
+                    <div class="col-md-6 float-left">
+                                    <h5 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;"> ON THE PROVIDER </h5>
+
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">CASH DEPOSIT</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="1" id="example-text-input">
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">CASH WITHDRAWAL</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">OPEN A WALLET</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+                                    </div>
+                    </div> <!-- end col -->
+                </div>
+                <div class="col-md-12 bg-box card">
+                    <h4 class="mt-0 header-title" style="padding-top: 20px;margin-left: 39%">NATIONAL WALLET COMMISSION</h4>
+
+                    <div class="col-md-6 float-right float-rightt">
+                                    <h5 class="mt-0 header-title" style="margin-left: 29%;padding-top: 20px;"> ON THE CLIENT </h5>
+
+                                    <div class="form-group row">
+
+                                        <div class="col-sm-12 m-b-20">
+                                            <input class="form-control" type="number" value="1" id="example-text-input">
+                                        </div>
+
+                                        <div class="col-sm-12 m-b-20 ff">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+
+                                        <div class="col-sm-12 m-b-20 ff">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+                                    </div>
+                    </div> <!-- end col -->
+                    <div class="col-md-6 float-left">
+                                    <h5 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;"> ON THE PROVIDER </h5>
+
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">CASH DEPOSIT</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="1" id="example-text-input">
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">CASH WITHDRAWAL</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">OPEN A WALLET</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="0.5" id="example-text-input">
+                                        </div>
+                                    </div>
+                    </div> <!-- end col -->
+                </div>
+
+                <!-- <label  class="col-sm-4 col-form-label"> </label> -->
+                <div class="col-md-8 m-b-20 float-left">
+                    <button type="submit" class="btn btn-lg btn-warning waves-effect waves-light text-dark btnT" style="width: 110%;  bottom: 24px; margin-left:20%">Save</button>
+                </div>
+                <!-- -fluid -->
+
+
+            </div>
+
+            <!-- content -->
+
+        <!-- Left Sidebar End -->
+        </div>
+    </div>
+    </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            JomoPay 2019 All Right Reserved ©.
+        </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      </script>
+
+</body>
+
+</html>

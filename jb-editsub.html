@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ar">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/simple-sidebar.css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+
+<style>
+    .bg-lighten-secondary{
+        background-color: #F1F1F1;
+    }
+    .card{
+        margin-top: unset !important;
+    }
+    .header-nav{
+        padding: 2.6rem 3rem 3.6rem 3.6rem;
+
+    }
+    .BT{
+        height: 37px;
+    margin-top: 201px;
+    background-color: #fdb402;
+    border: unset;
+    color: #212529;
+    }
+    .list-group-item-action {
+    text-align: left !important;
+    }
+    .select{
+        margin-top: 6px;
+        border-radius: 10px;
+        border-color: #0b0b0b;
+        background-color: #fdb402;
+    }
+</style>
+</head>
+
+<body id="top">
+
+  <header class="s-header" id="topnav">
+
+
+      <div class="tb-img">
+          <div class="wrapper">
+           <img src="img/header@2x.png" style="width: 1537px; height: 161px;">
+          </div>
+          <!-- end container -->
+      </div>
+
+      <div class="navbar-custom">
+          <div class="container-fluid">
+              <div id="navigation">
+
+                  <select class="float-right select" >
+                      <option value="en">en</option>
+                      <option value="ar">ar</option>
+                  </select>
+
+                  <ul class="navigation-menu">
+
+
+                      <li class="submenu float-right" >
+                          <a href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
+
+                      </li>
+                      <li class="submenu float-right">
+                          <a href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
+                      </li>
+                      <li class="submenu  float-left">
+                          <a href="">
+                              <img src="assets/images/admin-ic@2x.png" width="25px" height="25px" />
+                              Hello, Maram Nweiran
+                          </a>
+
+                      </li>
+
+                  </ul>
+
+              </div>
+          </div>
+      </div>
+
+  </header>
+    <div class="d-flex"  id="wrapper">
+    <div class="bg-light border-right" id="sidebar-wrapper" style="margin-top: 198px;">
+        <!-- <div class="sidebar-heading">Start Bootstrap </div> -->
+        <div class="list-group list-group-flush">
+            <a href="jp-admin.html" class="list-group-item list-group-item-action bg-light">Home</a>
+            <a href="jp-provider-settings.html" class="list-group-item list-group-item-action bg-light">Settings payment service providers</a>
+            <a href="jp-add-sub.html" class="list-group-item list-group-item-action bg-light">Add Sub-Agent</a>
+            <a href="jb-editsub.html" class="active list-group-item list-group-item-action bg-light">Modify Sub-Agent</a>
+            <a href="jp-reports.html" class="list-group-item list-group-item-action bg-light">Reports</a>
+            <a href="branches.html" class=" list-group-item list-group-item-action bg-light">Branches</a>
+            <a href="jp-fees.html" class="list-group-item list-group-item-action bg-light">Commissions</a>
+            <a href="trans.html" class="list-group-item list-group-item-action bg-light">Statement</a>
+
+
+        </div>
+      </div>
+        <button class="btn btn-primary BT" id="menu-toggle" style="z-index: 1;background-color: #fdb402;"><i class="fas fa-arrow-right ii"></i></button>
+    <div class="content">
+        <!-- Start content -->
+        <div class="container">
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="card-body bg-lighten-secondary">
+                            <div class="card bg-lighten-secondary m-b-20">
+                                <div class="card-body">
+
+                                    <div class="form-group row">
+
+                                        <label class="col-sm-4 col-form-label">The name of the sub-agent</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <select class="form-control">
+                                                <option>-</option>
+                                                <option>Large select</option>
+                                                <option>Large select</option>
+                                                <option>Small select</option>
+                                            </select>
+                                        </div>
+
+                                        <label class="col-sm-4 col-form-label">branch name</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <select class="form-control">
+                                                <option>-</option>
+                                                <option>Large select</option>
+                                                <option>Large select</option>
+                                                <option>Small select</option>
+                                            </select>
+                                        </div>
+
+                                        <label class="col-sm-4 col-form-label">Branch number </label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <select class="form-control">
+                                                <option>-</option>
+                                                <option>Large select</option>
+                                                <option>Large select</option>
+                                                <option>Small select</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 m-b-20"></div>
+
+                                        <div class="col-md-8 m-b-20">
+                                            <button type="button" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 100%;">Search</button>
+
+                                        </div>
+                                        <div class="col-md-4 m-b-20"></div>
+
+                                        <div class="col-md-8 m-b-20">
+                                            <button type="button" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 48%;">The previous</button>
+                                            <button type="button" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 48%; float: left; margin-right:22px">Next one</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <div class="card-body  ">
+                            <div class="card   m-b-20">
+                                <div class="card-body">
+
+                                    <form class="form-group row">
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Agent Name</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="text" value="" id="example-text-input" required oninvalid="this.setCustomValidity('يرجى عدم ترك الحقل فارغ')"
+                                            >
+                                        </div>
+
+                                        <label for="example-text-input" class="col-sm-4 col-form-label" pattern="\w+" name="username">user name</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="text" value="" id="example-text-input" >
+                                        </div>
+
+                                        <label for="example-password-input" class="col-sm-4 col-form-label">password </label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" value="" id="example-password-input" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
+                                            this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                                            if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
+                                            ">
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Arabic Name</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="text" value="" id="example-text-input" >
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">English Name</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="text" value="" id="example-text-input" required oninvalid="this.setCustomValidity('Please do not leave the field blank')"
+                                            oninput="setCustomValidity('')" onkeypress="return (event.charCode > 64 &&
+                                            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Branch name  </label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="text" value="" id="example-text-input" required oninvalid="this.setCustomValidity('Please do not leave the field blank')"
+                                        >
+                                        </div>
+                                        <label class="col-sm-4 col-form-label">Branch number</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <select class="form-control">
+                                                <option>--</option>
+                                                <option>Large select</option>
+                                                <option>Large select</option>
+                                                <option>Small select</option>
+                                            </select>
+                                        </div>
+
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Telephone number </label>
+
+                                        <div class="col-sm-8 m-b-20">
+                                            <input type="number" class="form-control" value="" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                            <span class="phoneInput"> +962 </span>
+                                        </div>
+
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Deposit top limit</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="" id="example-text-input">
+                                        </div>
+
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Roof withdrawals</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="" id="example-text-input">
+                                        </div>
+
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">The top limit of wallet opening operations</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="number" value="" id="example-text-input">
+                                        </div>
+                                        <label class="col-sm-4 col-form-label">Account status </label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <select class="form-control">
+                                                <option>--</option>
+                                                <option>Large select</option>
+                                                <option>Large select</option>
+                                                <option>Large select</option>
+                                                <option>Large select</option>
+                                            </select>
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Commission management</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups" data-parsley-mincheck="1">
+                                                <label class="custom-control-label" for="customCheck1">Yes</label>
+                                            </div>
+                                        </div>
+                                        <label for="example-text-input" class="col-sm-4 col-form-label"></label>
+                                        <div class="btn-group  col-sm-8">
+                                            <button type="submit" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 220px;">Save</button>
+                                            <span style="padding-left: 20px;"></span>
+                                            <button type="reset" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 220px;">Clear the fields</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div>
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- content -->
+        </div>
+        <!-- Left Sidebar End -->
+    </div>
+    </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            JomoPay 2019 All Right Reserved ©.
+        </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      </script>
+
+</body>
+
+</html>

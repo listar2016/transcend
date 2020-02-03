@@ -1,0 +1,14 @@
+.accountbg {
+    display:table; 
+    height:100%; 
+    margin: 0 auto;
+}
+.login-container{
+    display:table-cell; 
+    vertical-align:middle;
+}
+.login-page {
+    max-width: 400px;    
+    width: 100%;
+    margin: auto;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ar">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+
+<style>
+    .collapse:not(.show) {
+            display: list-item;
+        }
+        ul .collapse .timepicker{
+            display: none;
+        }
+    .card{
+        background-color: #f5f5f5;
+        margin-top: unset !important;
+    }
+    .content{
+        max-width: unset;
+    }
+    .select{
+        margin-top: 6px;
+        border-radius: 10px;
+        border-color: #0b0b0b;
+        background-color: #fdb402;
+    }
+</style>
+</head>
+
+<body id="top">
+
+  <header class="s-header" id="topnav">
+
+
+      <div class="tb-img">
+          <div class="wrapper">
+           <img src="img/header@2x.png" style="width: 1537px; height: 161px;">
+          </div>
+          <!-- end container -->
+      </div>
+
+      <div class="navbar-custom">
+          <div class="container-fluid">
+              <div id="navigation">
+
+                  <select class="float-right select" >
+                      <option value="en">en</option>
+                      <option value="ar">ar</option>
+                  </select>
+
+                  <ul class="navigation-menu">
+
+
+                      <li class="submenu float-right" >
+                          <a href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
+
+                      </li>
+                      <li class="submenu float-right">
+                          <a href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
+                      </li>
+                      <li class="submenu  float-left">
+                          <a href="index.html">
+                              <img src="assets/images/admin-ic@2x.png" width="25px" height="25px" />
+                              Hello, Maram Nweiran
+                          </a>
+
+                      </li>
+
+                  </ul>
+
+              </div>
+          </div>
+      </div>
+  </header>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="card-body bg-lighten-first">
+                        <div class="card bg-lighten-first m-b-20">
+                            <h4 class="mt-0 header-title" style="margin-right: 50%;padding-top: 20px;">
+Reports                            </h4>
+                            <div class="card-body">
+
+                                <div class="form-group row">
+
+
+                                    <label class="col-sm-4 col-form-label">
+                                    Report
+                                    </label>
+                                    <div class="col-sm-8 m-b-20">
+                                        <select class="form-control">
+                                            <option>--</option>
+                                            <option>Large select</option>
+                                            <option>Large select</option>
+                                            <option>Small select</option>
+                                        </select>
+                                    </div>
+
+                                    <label class="col-sm-4 col-form-label">
+                                    service provider
+                                    </label>
+                                    <div class="col-sm-8 m-b-20">
+                                        <select class="form-control">
+                                            <option>--</option>
+                                            <option>Large select</option>
+                                            <option>Large select</option>
+                                            <option>Small select</option>
+                                        </select>
+                                    </div>
+
+
+                                    <label for="example-text-input" class="col-sm-4 col-form-label"> Wallet Mobile Number </label>
+
+                                    <div class="col-sm-8 m-b-20">
+                                        <input type="number" class="form-control" value="" aria-label="Sizing example input"required oninvalid="this.setCustomValidity('يرجى عدم ترك الحقل فارغ')"
+                                        oninput="setCustomValidity('')" aria-describedby="inputGroup-sizing-default">
+                                        <span class="phoneInput"> +962 </span>
+                                    </div>
+
+
+
+                                    <div class="col-md-4 m-b-20">
+                                        <label for="example-text-input" class="col-form-label"> The start date of the report </label>
+
+                                    </div>
+                                    <div class="col-md-8 m-b-20">
+                                            <div class="input-append date input-group datetimepicker" id="">
+                                                    <input type="text" class="form-control"  placeholder="mm/dd/yyyy" required oninvalid="this.setCustomValidity('يرجى عدم ترك الحقل فارغ')"
+                                                    oninput="setCustomValidity('')">
+                                                    <div class="input-group-append bg-custom b-0"><span class="input-group-text add-on"><i class="mdi mdi-calendar" data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span></div>
+                                                </div><!-- input-group -->
+                                    </div>
+
+
+                                    <div class="col-md-4 m-b-20">
+                                        <label for="example-text-input" class="col-form-label"> The end date of the report</label>
+
+                                    </div>
+                                    <div class="col-md-8 m-b-20">
+                                            <div class="input-append date input-group datetimepicker" id="">
+                                                    <input type="text" class="form-control"  placeholder="mm/dd/yyyy" required oninvalid="this.setCustomValidity('يرجى عدم ترك الحقل فارغ')"
+                                                    oninput="setCustomValidity('')">
+                                                    <div class="input-group-append bg-custom b-0"><span class="input-group-text add-on"><i class="mdi mdi-calendar" data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span></div>
+                                                </div><!-- input-group -->
+                                    </div>
+                                    <div class="col-md-4 m-b-20">
+                                        <label for="example-text-input" class="col-form-label">    </label>
+
+                                    </div>
+                                    <div class="col-md-8 m-b-20 float-left">
+                                        <button type="button" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 100%;">Create a report</button>
+
+                                    </div>
+
+                                    <hr>
+                                    <div class="col-md-12">
+                                        <hr>
+
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">
+
+                                        Movement type
+
+                                    </label>
+                                    <div class="col-sm-8 m-b-20">
+                                        <select class="form-control">
+                                            <option>--</option>
+                                            <option>Large select</option>
+                                            <option>Large select</option>
+                                            <option>Small select</option>
+                                        </select>
+                                    </div>
+
+
+                                    <label for="example-text-input" class="col-sm-4 col-form-label"> Motion reference / wallet mobile number </label>
+                                    <div class="col-sm-8 m-b-20">
+                                        <input type="text" class="form-control"   aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+
+                                    <label for="example-text-input" class="col-sm-4 col-form-label">Report size </label>
+                                    <div class="col-sm-2 m-b-20">
+                                            <div class="custom-control custom-checkbox" style="display: flex;">
+                                                <input type="radio" name="check" class="custom-control-input" id="customCheck1" >
+                                                <label class="custom-control-label" for="customCheck1" >Receipt</label>
+                                                <div class="clearfix"></div>
+
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 m-b-20">
+                                            <div class="custom-control custom-checkbox ch2" style="display: flex;">
+                                                <input type="radio" name="check" class="custom-control-input" id="customCheck2" >
+                                                <label class="custom-control-label" for="customCheck2" style="margin-right: 50px">A4 paper</label>
+                                            </div>
+                                        </div>
+                                    <div class="col-sm-1 m-b-20">
+
+                                    </div>
+
+                                    <div class="col-sm-4 m-b-20">
+
+                                    </div>
+                                    <div class="col-md-8 m-b-20 float-left">
+                                        <button type="button" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 100%;">
+                                        Reprint
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+                </div>
+            </div>
+            <!-- container-fluid -->
+
+
+        </div>
+        <!-- content -->
+    <!-- Left Sidebar End -->
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+        JomoPay 2019 All Right Reserved ©.
+    </footer>
+
+    <!-- End Footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- DatePicker -->
+    <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script type="text/javascript"
+    src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+    src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+    src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+    <script type="text/javascript">
+    $('.datetimepicker').datetimepicker({
+        format: 'dd/MM/yyyy',
+        language: 'pt-En'
+    });
+    </script>
+
+</body>
+
+</html>

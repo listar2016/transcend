@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ar">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/simple-sidebar.css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+
+<style>
+    .BT{
+        height: 37px;
+    margin-top: 201px;
+    background-color: #fdb402;
+    border: unset;
+    color: #212529;
+    }
+    .list-group-item-action {
+    text-align: left !important;
+    }
+    .select{
+        margin-top: 6px;
+        border-radius: 10px;
+        border-color: #0b0b0b;
+        background-color: #fdb402;
+    }
+</style>
+</head>
+
+<body id="top">
+
+  <header class="s-header" id="topnav">
+
+
+      <div class="tb-img">
+          <div class="wrapper">
+           <img src="img/header@2x.png" style="width: 1537px; height: 161px;">
+          </div>
+          <!-- end container -->
+      </div>
+
+      <div class="navbar-custom">
+          <div class="container-fluid">
+              <div id="navigation">
+                  <select class="float-right select">
+                      <option value="en">en</option>
+                      <option value="ar">ar</option>
+                  </select>
+
+                  <ul class="navigation-menu">
+                      <li class="submenu float-right" >
+                          <a href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
+                      </li>
+                      <li class="submenu float-right">
+                          <a href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
+                      </li>
+                      <li class="submenu  float-left">
+                          <a href="index.html">
+                              <img src="assets/images/admin-ic@2x.png" width="25px" height="25px" />
+                              Hello, Maram Nweiran
+                          </a>
+
+                      </li>
+
+                  </ul>
+
+              </div>
+          </div>
+      </div>
+
+  </header>
+        <div class="d-flex"  id="wrapper">
+        <div class="bg-light border-right" id="sidebar-wrapper" style="margin-top: 198px;">
+            <div class="sidebar-heading">
+                <div class="col-sm-12">
+                <h4 class="page-title">
+                    <img src="assets/images/br-2@2x.png" alt="" style="padding: 20px; margin-left: 36px;" />
+                </h4>
+                </div>
+            </div>
+            <div class="list-group list-group-flush">
+              <a href="jp-nationalWallet.html" class="list-group-item list-group-item-action bg-light">Cash </a>
+              <a href="jp-nationalWallet-2.html" class="active list-group-item list-group-item-action bg-light">Withdrawal</a>
+              <a href="jp-nationalWallet-3.html" class="list-group-item list-group-item-action bg-light">Open a new wallet</a>
+              <a href="#" class="list-group-item list-group-item-action bg-light">Inquiries</a>
+
+            </div>
+          </div>
+            <button class="btn btn-primary BT" id="menu-toggle" style="z-index: 1;background-color: #fdb402;"><i class="fas fa-arrow-right ii"></i></button>
+        <div class="content">
+            <!-- Start content -->
+            <div>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                        <div class="card-body">
+                            <div class="card m-b-20">
+                                <div class="card-body">
+
+                                  <form class="form-group row">
+                                      <label for="example-text-input" class="col-sm-4 col-form-label">Amount</label>
+                                      <div class="col-sm-4 m-b-20">
+                                          <input class="form-control" type="number" value="" id="example-text-input" required  oninvalid="this.setCustomValidity('يرجى عدم ترك الحقل فارغ')"
+                                          oninput="setCustomValidity('')"></input>
+                                      </div>
+                                      <div class="col-sm-4 m-b-20 input-group-prepend">
+                                          <input class="form-control text-center" readonly type="text" value="JD" id="example-text-input">
+                                      </div>
+
+                                      <label for="example-text-input" class="col-sm-4 col-form-label">Commission on the customer</label>
+                                      <div class="col-sm-4 m-b-20">
+                                          <input class="form-control" type="number" value="" id="example-text-input" required oninvalid="this.setCustomValidity('يرجى عدم ترك الحقل فارغ')"
+                                          oninput="setCustomValidity('')">
+                                      </div>
+                                      <div class="col-sm-4 m-b-20">
+                                          <input class="form-control text-center" readonly type="text" value="JD" id="example-text-input" >
+                                      </div>
+
+                                      <label for="example-text-input" class="col-sm-4 col-form-label"> Wallet mobile number </label>
+                                      <div class="col-sm-8 m-b-20">
+                                          <input type="number" class="form-control" value="" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" oninvalid="this.setCustomValidity('يرجى عدم ترك الحقل فارغ')"
+                                          oninput="setCustomValidity('')">
+                                          <span class="phoneInput"> 0 </span>
+                                      </div>
+                                      <label  class="col-sm-4 col-form-label"> </label>
+
+                                      <div class="col-md-8 m-b-20 float-left">
+                                          <button type="submit" class="btn btn-lg btn-warning waves-effect waves-light text-dark btnN" style="width: 100%;">Request a confirmation code</button>
+                                      </div>
+                                          <label for="example-text-input" class="col-sm-4 col-form-label">Enter the number </label>
+                                          <div class="col-sm-8 m-b-20">
+                                              <input type="number" class="form-control"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required oninvalid="this.setCustomValidity('يرجى عدم ترك الحقل فارغ')"
+                                              oninput="setCustomValidity('')">
+                                          </div>
+
+                                      <label for="example-text-input" class="col-sm-4 col-form-label">Report size </label>
+                                      <div class="col-sm-2 m-b-20">
+                                          <div class="custom-control custom-checkbox" style="display: flex;">
+                                              <input type="radio" name="check" class="custom-control-input" id="customCheck1" >
+                                              <label class="custom-control-label" for="customCheck1" >Receipt</label>
+                                              <div class="clearfix"></div>
+
+
+
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-3 m-b-20">
+                                          <div class="custom-control custom-checkbox" style="display: flex;">
+                                              <input type="radio" name="check" class="custom-control-input" id="customCheck2" >
+                                              <label class="custom-control-label cP" for="customCheck2" style="margin-right: 50px">A4 paper</label>
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-1 m-b-20">
+
+                                      </div>
+
+
+
+
+                                      <label class="col-sm-4 col-form-label"></label>
+                                      <div class="btn-group col-sm-8 m-b-20">
+                                          <button type="submit" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 280px;">Withdrawal</button>
+                                          <span style="padding-left: 20px;"></span>
+                                          <button type="reset" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 280px;">Clear the fields</button>
+                                      </div>
+                                  </form>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div>
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- content -->
+
+            <div class="col-sm-6 col-md-3 m-t-30">
+
+
+                <div class="modal fade bs-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mt-0">تأكيد عملية سحب</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" style="text-align: right;">
+                              <p>
+                                  You are about to withdraw 1500 dinars from the wallet
+                              </p>
+
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-warning">Confirm</button>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                          </div>
+
+                      </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+          </div>
+
+          <div class="col-sm-6 col-md-3 m-t-30">
+
+
+              <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title mt-0">inquiries</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body" style="text-align: right;">
+                              <p>In case of any problem in the service, please call the following numbers
+                              </p>
+                              <p>
+                                  078000001
+                              </p>
+                              <p>078000002
+                              </p>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <footer class="footer">
+        JomoPay 2019 All Right Reserved ©.
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      </script>
+
+</body>
+
+</html>
