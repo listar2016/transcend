@@ -11,32 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/simple-sidebar.css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/fix-style.css">
 
-<style>
-    .collapse:not(.show) {
-            display: list-item;
-        }
-        ul .collapse .timepicker{
-            display: none;
-        }
-        .BT{
-        height: 37px;
-    margin-top: 201px;
-    background-color: #fdb402;
-    border: unset;
-    color: #212529;
-    }
-    .list-group-item-action {
-    text-align: left !important;
-    }
-    .select{
-        margin-top: 6px;
-        border-radius: 10px;
-        border-color: #0b0b0b;
-        background-color: #fdb402;
-    }
-</style>
 </head>
 
 <body id="top">
@@ -46,47 +22,38 @@
 
       <div class="tb-img">
           <div class="wrapper">
-           <img src="img/header@2x.png" style="width: 1537px; height: 161px;">
+           <img src="img/header@2x.png">
           </div>
           <!-- end container -->
       </div>
 
-      <div class="navbar-custom">
-          <div class="container-fluid">
-              <div id="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/teller-ic@2x.png" width="25px" height="25px" />Hello, Maram Nweiran
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                  <select class="float-right select" >
-                      <option value="en">en</option>
-                      <option value="ar">ar</option>
-                  </select>
-
-                  <ul class="navigation-menu">
-
-
-                      <li class="submenu float-right" >
-                          <a href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
-
-                      </li>
-                      <li class="submenu float-right">
-                          <a href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
-                      </li>
-                      <li class="submenu  float-left">
-                          <a href="index.html">
-                              <img src="assets/images/admin-ic@2x.png" width="25px" height="25px" />
-                              Hello, Maram Nweiran
-                          </a>
-
-                      </li>
-
-                  </ul>
-
-              </div>
-          </div>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
+                </li>
+                <select class="float-right select">
+                    <option value="en">en</option>
+                    <option value="ar">ar</option>
+                </select>
+            </ul>
+        </div>
+      </nav>
 
   </header>
         <div class="d-flex"  id="wrapper">
-        <div class="bg-light border-right" id="sidebar-wrapper" style="margin-top: 198px;">
+        <div class="bg-light border-right" id="sidebar-wrapper">
             <div class="sidebar-heading">
                 <div class="col-sm-12">
                 <h4 class="page-title">
@@ -160,21 +127,14 @@
 
                                         </div>
                                         <div class="col-md-8 m-b-20">
-                                            <div class="input-group date datetimepicker" >
-                                                    <input type="text" class="form-control"  placeholder="mm/dd/yyyy" required oninvalid="this.setCustomValidity('Required')"
-                                                    oninput="setCustomValidity('')">
-                                                    <div class="input-group-append bg-custom b-0"><span class="input-group-text add-on"><i class="mdi mdi-calendar" data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span></div>
-                                                </div><!-- input-group -->
+                                            <input id="datepicker1" placeholder="mm/dd/yyyy"/>
                                         </div>
                                         <div class="col-md-4 m-b-20">
                                             <label for="example-text-input" class="col-form-label"> Date of Birth </label>
 
                                         </div>
                                         <div class="col-md-8 m-b-20">
-                                            <div class="input-group date datetimepicker" id="">
-                                                    <input type="text" class="form-control"  placeholder="mm/dd/yyyy">
-                                                    <div class="input-group-append bg-custom"><span class="input-group-text add-on"><i class="mdi mdi-calendar" data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span></div>
-                                                </div><!-- input-group -->
+                                            <input id="datepicker2" placeholder="mm/dd/yyyy"/>
                                         </div>
 
                                         <label class="col-sm-4 col-form-label">Country of residence</label>
@@ -302,24 +262,20 @@
     <footer class="footer">
         JomoPay 2019 All Right Reserved ©.
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-
-
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <!-- DatePicker -->
 
-    <script type="text/javascript"
-    src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
-    </script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
-    $('.datetimepicker').datetimepicker({
-
-    });
-
+        $('#datepicker1').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+        $('#datepicker2').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
     </script>
 
     <script>

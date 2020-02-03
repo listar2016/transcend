@@ -11,115 +11,56 @@
     <link rel="stylesheet" href="css/simple-sidebar.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="css/fix-style.css">
+</head>
 <style>
     .bg-lighten-secondary{
         background-color: #F1F1F1;
         margin-top: 69px;
     }
-    .card{
-        margin-top: unset !important;
-    }
-    .header-nav{
-        padding: 2.6rem 3rem 3.6rem 3.6rem;
-
-    }
-    .header-nav__list a {
-    padding-left: 3.6rem;
-}
     .card-bg-1 {
-    background-color: #f9f9f9 !important;
-    margin-top: 57px;
-    }
-    .BT{
-        margin-right: 343px;
-    }
-    @media (max-width: 991px){
-        .BT {
-            margin-right: 185px ;
-        }
-    }
-    @media (max-width: 800px){
-        .BT {
-            margin-right: 161px;
-        }
-    }
-    @media (max-width: 603px){
-        .container {
-            margin-top: 105px;
-            width: 418px !important;
-        }
-        .BT {
-            margin-right: 121px;
-        }
-    }
-    .BTT{
-        height: 37px;
-    margin-top: 201px;
-    background-color: #fdb402;
-    border: unset;
-    color: #212529;
-    }
-    .list-group-item-action {
-    text-align: left !important;
-    }
-    .select{
-        margin-top: 6px;
-        border-radius: 10px;
-        border-color: #0b0b0b;
-        background-color: #fdb402;
+        background-color: #f9f9f9 !important;
+        margin-top: 57px;
     }
 </style>
-</head>
 
 <body id="top">
 
-  <header class="s-header" id="topnav">
+    <header class="s-header" id="topnav">
+        <div class="tb-img">
+            <div class="wrapper">
+                <img src="img/header@2x.png">
+            </div>
+        <!-- end container -->
+        </div>
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/teller-ic@2x.png" width="25px" height="25px" />Hello, Maram Nweiran
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="tb-img">
-          <div class="wrapper">
-           <img src="img/header@2x.png" style="width: 1537px; height: 161px;">
-          </div>
-          <!-- end container -->
-      </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
+                    </li>
+                    <select class="float-right select">
+                        <option value="en">en</option>
+                        <option value="ar">ar</option>
+                    </select>
+                </ul>
+            </div>
+        </nav>
 
-      <div class="navbar-custom">
-          <div class="container-fluid">
-              <div id="navigation">
-
-                  <select class="float-right select">
-                      <option value="en">en</option>
-                      <option value="ar">ar</option>
-                  </select>
-
-                  <ul class="navigation-menu">
-
-
-                      <li class="submenu float-right" >
-                          <a href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
-
-                      </li>
-                      <li class="submenu float-right">
-                          <a href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
-                      </li>
-                      <li class="submenu  float-left">
-                          <a href="index.html">
-                              <img src="assets/images/admin-ic@2x.png" width="25px" height="25px" />
-                              Hello, Maram Nweiran
-                          </a>
-
-                      </li>
-
-                  </ul>
-
-              </div>
-          </div>
-      </div>
-
-  </header>
-        <div class="d-flex"  id="wrapper">
-        <div class="bg-light border-right" id="sidebar-wrapper" style="margin-top: 198px;">
+    </header>
+    <div class="d-flex"  id="wrapper">
+        <div class="bg-light border-right" id="sidebar-wrapper">
             <!-- <div class="sidebar-heading">Start Bootstrap </div> -->
             <div class="list-group list-group-flush">
                 <a href="jp-admin.html" class="list-group-item list-group-item-action bg-light">Home</a>
@@ -133,19 +74,103 @@
 
 
             </div>
-          </div>
-            <button class="btn btn-primary BTT" id="menu-toggle" style="z-index: 1;background-color: #fdb402;"><i class="fas fa-arrow-right ii"></i></button>
-    <div class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card-body   ">
-                        <div class="card m-b-20">
+        </div>
+        <button class="btn btn-primary BT" id="menu-toggle" style="z-index: 1;background-color: #fdb402;"><i class="fas fa-arrow-right ii"></i></button>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body   ">
+                            <div class="card m-b-20">
 
-                            <div class="card-body">
-                        <div class="card card-bg-1  m-b-20">
-                            <h4 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;">Dinarak</h4>
-                            <div class="card-body">
+                                <div class="card-body">
+                            <div class="card card-bg-1  m-b-20">
+                                <h4 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;">Dinarak</h4>
+                                <div class="card-body">
+
+                                    <form class="form-group row">
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Username of the agent</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="text" value="Agentdemo" id="example-text-input" pattern="\w+" name="username">
+                                        </div>
+
+                                        <label for="example-password-input" class="col-sm-4 col-form-label">Password agent</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" value="hunter2" id="example-password-input" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
+                                            this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                                            if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
+                                            ">
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+
+                    </div>
+                    <div class="col-md-12">
+
+                        <div class="card-body bg-lighten-secondary">
+                            <div class="card m-b-20 bg-lighten-secondary">
+                                <h4 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;">Zain Cash</h4>
+                                <div class="card-body">
+
+                                    <form class="form-group row">
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Username of the deposit agent</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="text" value="Agentdemo" id="example-text-input" pattern="\w+" name="username">
+                                        </div>
+
+                                        <label for="example-password-input" class="col-sm-4 col-form-label">Password of the deposit agent</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" value="hunter2" id="example-password-input"title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
+                                            this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                                            if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
+                                            " >
+                                        </div>
+                                    </form>
+
+                                    <form class="form-group row">
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Username of the withdrawal agent</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="text" value="Agentdemo" id="example-text-input" pattern="\w+" name="username">
+                                        </div>
+
+                                        <label for="example-password-input" class="col-sm-4 col-form-label">Password of the withdrawal agent</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" value="hunter2" id="example-password-input" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
+                                            this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                                            if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
+                                            ">
+                                        </div>
+                                    </form>
+
+                                    <form class="form-group row">
+                                        <label for="example-text-input" class="col-sm-4 col-form-label">Username of the wallet opening agent</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" type="text" value="Agentdemo" id="example-text-input" pattern="\w+" name="username">
+                                        </div>
+
+                                        <label for="example-password-input" class="col-sm-4 col-form-label">Password of the agent to open the governor</label>
+                                        <div class="col-sm-8 m-b-20">
+                                            <input class="form-control" value="hunter2" id="example-password-input" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
+                                            this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                                            if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
+                                            " >
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+
+                    </div>
+                    <div class="col-md-12">
+
+                        <div class="card-body card-bg-1 ">
+                            <div class="card  card-bg-1 m-b-20">
+                                <h4 class="mt-0 header-title" style="margin-left: 42%;padding-top: 20px;margin-bottom: 23px;">NATIONAL WALLET</h4>
+                                <div class=" ">
 
                                 <form class="form-group row">
                                     <label for="example-text-input" class="col-sm-4 col-form-label">Username of the agent</label>
@@ -162,40 +187,25 @@
                                     </div>
                                 </form>
 
+                                </div>
                             </div>
-                        </div>
-                    </div> <!-- end col -->
+                        </div> <!-- end col -->
 
-                </div>
-                <div class="col-md-12">
+                    </div>
+                    <div class="col-md-12">
 
-                    <div class="card-body bg-lighten-secondary">
-                        <div class="card m-b-20 bg-lighten-secondary">
-                            <h4 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;">Zain Cash</h4>
-                            <div class="card-body">
+                        <div class="card-body bg-lighten-secondary">
+                            <div class="card bg-lighten-secondary m-b-20">
+                                <h4 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;">Aya </h4>
+                                <div class="card-body">
 
                                 <form class="form-group row">
-                                    <label for="example-text-input" class="col-sm-4 col-form-label">Username of the deposit agent</label>
+                                    <label for="example-text-input" class="col-sm-4 col-form-label">Username of the agent</label>
                                     <div class="col-sm-8 m-b-20">
                                         <input class="form-control" type="text" value="Agentdemo" id="example-text-input" pattern="\w+" name="username">
                                     </div>
 
-                                    <label for="example-password-input" class="col-sm-4 col-form-label">Password of the deposit agent</label>
-                                    <div class="col-sm-8 m-b-20">
-                                        <input class="form-control" value="hunter2" id="example-password-input"title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
-                                        this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
-                                        if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
-                                        " >
-                                    </div>
-                                </form>
-
-                                <form class="form-group row">
-                                    <label for="example-text-input" class="col-sm-4 col-form-label">Username of the withdrawal agent</label>
-                                    <div class="col-sm-8 m-b-20">
-                                        <input class="form-control" type="text" value="Agentdemo" id="example-text-input" pattern="\w+" name="username">
-                                    </div>
-
-                                    <label for="example-password-input" class="col-sm-4 col-form-label">Password of the withdrawal agent</label>
+                                    <label for="example-password-input" class="col-sm-4 col-form-label">Password agent</label>
                                     <div class="col-sm-8 m-b-20">
                                         <input class="form-control" value="hunter2" id="example-password-input" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
                                         this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
@@ -204,112 +214,40 @@
                                     </div>
                                 </form>
 
-                                <form class="form-group row">
-                                    <label for="example-text-input" class="col-sm-4 col-form-label">Username of the wallet opening agent</label>
-                                    <div class="col-sm-8 m-b-20">
-                                        <input class="form-control" type="text" value="Agentdemo" id="example-text-input" pattern="\w+" name="username">
-                                    </div>
-
-                                    <label for="example-password-input" class="col-sm-4 col-form-label">Password of the agent to open the governor</label>
-                                    <div class="col-sm-8 m-b-20">
-                                        <input class="form-control" value="hunter2" id="example-password-input" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
-                                        this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
-                                        if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
-                                        " >
-                                    </div>
-                                </form>
-
+                                </div>
                             </div>
+                        </div> <!-- end col -->
+                        <label class="col-sm-4 col-form-label" ></label>
+                        <div class="btn-group col-sm-8 m-b-20" style="margin-bottom: 22px;">
+                            <button type="submit" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 280px;">Withdrawal</button>
+                            <span style="padding-left: 20px;"></span>
+                            <button type="reset" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 280px;">Clear the fields</button>
                         </div>
-                    </div> <!-- end col -->
-
-                </div>
-                <div class="col-md-12">
-
-                    <div class="card-body card-bg-1 ">
-                        <div class="card  card-bg-1 m-b-20">
-                            <h4 class="mt-0 header-title" style="margin-left: 42%;padding-top: 20px;margin-bottom: 23px;">NATIONAL WALLET</h4>
-                            <div class=" ">
-
-                              <form class="form-group row">
-                                  <label for="example-text-input" class="col-sm-4 col-form-label">Username of the agent</label>
-                                  <div class="col-sm-8 m-b-20">
-                                      <input class="form-control" type="text" value="Agentdemo" id="example-text-input" pattern="\w+" name="username">
-                                  </div>
-
-                                  <label for="example-password-input" class="col-sm-4 col-form-label">Password agent</label>
-                                  <div class="col-sm-8 m-b-20">
-                                      <input class="form-control" value="hunter2" id="example-password-input" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
-                                      this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
-                                      if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
-                                      ">
-                                  </div>
-                              </form>
-
-                            </div>
-                        </div>
-                    </div> <!-- end col -->
-
-                </div>
-                <div class="col-md-12">
-
-                    <div class="card-body bg-lighten-secondary">
-                        <div class="card bg-lighten-secondary m-b-20">
-                            <h4 class="mt-0 header-title" style="margin-left: 50%;padding-top: 20px;">Aya </h4>
-                            <div class="card-body">
-
-                              <form class="form-group row">
-                                  <label for="example-text-input" class="col-sm-4 col-form-label">Username of the agent</label>
-                                  <div class="col-sm-8 m-b-20">
-                                      <input class="form-control" type="text" value="Agentdemo" id="example-text-input" pattern="\w+" name="username">
-                                  </div>
-
-                                  <label for="example-password-input" class="col-sm-4 col-form-label">Password agent</label>
-                                  <div class="col-sm-8 m-b-20">
-                                      <input class="form-control" value="hunter2" id="example-password-input" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
-                                      this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
-                                      if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
-                                      ">
-                                  </div>
-                              </form>
-
-                            </div>
-                        </div>
-                    </div> <!-- end col -->
-                    <label class="col-sm-4 col-form-label" ></label>
-                    <div class="btn-group col-sm-8 m-b-20 BT" style="margin-bottom: 22px;">
-                        <button type="submit" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 280px;">Withdrawal</button>
-                        <span style="padding-left: 20px;"></span>
-                        <button type="reset" class="btn btn-lg btn-warning waves-effect waves-light text-dark" style="width: 280px;">Clear the fields</button>
                     </div>
+
+
+
+
                 </div>
-
-
+                <!-- container-fluid -->
 
 
             </div>
-            <!-- container-fluid -->
 
+            <!-- content -->
 
         </div>
-
-        <!-- content -->
-
-    </div>
-    <!-- Left Sidebar End -->
-    </div>
-    </div>
+        <!-- Left Sidebar End -->
         </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
         JomoPay 2019 All Right Reserved ©.
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         $("#menu-toggle").click(function(e) {

@@ -11,24 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/simple-sidebar.css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="css/fix-style.css">
 <style>
-    .BT{
-        height: 37px;
-    margin-top: 201px;
-    background-color: #fdb402;
-    border: unset;
-    color: #212529;
-    }
-    .list-group-item-action {
-    text-align: left !important;
-    }
-    .select{
-        margin-top: 6px;
-        border-radius: 10px;
-        border-color: #0b0b0b;
-        background-color: #fdb402;
-    }
+    
 </style>
 </head>
 
@@ -39,47 +24,38 @@
 
       <div class="tb-img">
           <div class="wrapper">
-           <img src="img/header@2x.png" style="width: 1537px; height: 161px;">
+           <img src="img/header@2x.png">
           </div>
           <!-- end container -->
       </div>
 
-      <div class="navbar-custom">
-          <div class="container-fluid">
-              <div id="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/teller-ic@2x.png" width="25px" height="25px" />Hello, Maram Nweiran
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                  <select class="float-right select" >
-                      <option value="en">en</option>
-                      <option value="ar">ar</option>
-                  </select>
-
-                  <ul class="navigation-menu">
-
-
-                      <li class="submenu float-right" >
-                          <a href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
-
-                      </li>
-                      <li class="submenu float-right">
-                          <a href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
-                      </li>
-                      <li class="submenu  float-left">
-                          <a href="">
-                              <img src="assets/images/admin-ic@2x.png" width="25px" height="25px" />
-                              Hello, Maram Nweiran
-                          </a>
-
-                      </li>
-
-                  </ul>
-
-              </div>
-          </div>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="jp-password.html"><i class="mdi mdi-lock"></i> Change Password </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="mdi mdi-exit-to-app"></i> Sign out </a>
+                </li>
+                <select class="float-right select">
+                    <option value="en">en</option>
+                    <option value="ar">ar</option>
+                </select>
+            </ul>
+        </div>
+    </nav>
 
   </header>
     <div class="d-flex"  id="wrapper">
-    <div class="bg-light border-right" id="sidebar-wrapper" style="margin-top: 198px;">
+    <div class="bg-light border-right" id="sidebar-wrapper">
         <div class="sidebar-heading">
             <div class="col-sm-12">
             <h4 class="page-title">
@@ -237,11 +213,9 @@
     <footer class="footer">
         JomoPay 2019 All Right Reserved ©.
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
     <script src="js/main.js"></script>
     <script>
         $("#menu-toggle").click(function(e) {

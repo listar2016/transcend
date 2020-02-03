@@ -11,13 +11,40 @@
     margin: 2rem auto;
     padding: 0px 5px;
 }
-.card-body { 
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
+
 .bg-custom {
     background-color: #FDB402 !important
 }
 .navbar-brand {
     font-size: 14px;
+}
+.carousel-item a {
+    text-align: center !important;
+}
+.BT{
+    height: 37px;
+    background-color: #fdb402;
+    border: unset;
+    color: #212529;
+}
+.list-group-item-action {
+    text-align: left !important;
+}
+.select{
+    margin: 10px;
+    border-radius: 10px;
+    border-color: #0b0b0b;
+    background-color: #fdb402;
+    width:40px;
+}
+
+.text-label{
+    font-weight:normal !important;
+    color: #354558 !important;
+}
+.table {
+    width: 100% !important;
+    margin-right: unset !important;
+    color: #212529;
+    overflow-x: auto;
 }

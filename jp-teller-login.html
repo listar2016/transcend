@@ -7,105 +7,75 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <style>
-        .wrapper-page{
-            margin: unset !important;
-        }
-        .card{
-            top :-38px !important;
-        }
-        @media (max-width: 768px){
-            .card{
-                right: 22% !important;
-                width: 60% !important;
-            }
-
-        }
-        @media (max-width: 540px){
-            .card{
-                right: 22% !important;
-                width: 60% !important;
-            }
-
-        }
-    </style>
-
+    <link href="css/login.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
 
-<!-- Begin page -->
-<div class="accountbg"></div>
+    <!-- Begin page -->
+    <div class="accountbg">
+        <div class="login-container">
+            <div class="card login-page shadow-none">
 
-<div class="wrapper-page" style="
-    position: fixed;
-">
-    <div class="card card-pages shadow-none" style="margin-left: 20px;height: 100vh;top: -130px;background-color: white;opacity: .80;right: 200%;width: 100%;padding-top: 30px;overflow-x: hidden;">
+                <div class="card-body" >
+                    <div class="text-center m-t-0 m-b-15">
+                        <a href="jp-admin.html" class="logo logo-admin"><img src="assets/images/login-logo@2x.png" alt=""></a>
+                    </div>
+                    <h5 class="font-18" style="text-align: left">The Unified Interface of Mobile Payment Service Providers – Mobile Wallet</h5>
+                    <div style="text-align: left">
+                        <img src="assets/images/admin-icon@2x.png">
+                        <bold>Login</bold>
+                    </div>
+                    <form class="form-horizontal m-t-20" action="jp-admin.html" style="text-align: left">
 
-        <div class="card-body" >
-            <div class="text-center m-t-0 m-b-15">
-                <a href="jp-admin.html" class="logo logo-admin"><img src="assets/images/login-logo@2x.png" alt=""></a>
+                        <div class="form-group">
+                            <div >
+                                <label>Username</label>
+                                <input class="form-control" title="Enter your username" type="text" pattern="\w+" name="username" placeholder="username" style="text-align: left" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div >
+                                <label>Password</label>
+                                <input class="form-control" placeholder="password"style="text-align: left" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
+                                this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+                                if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
+                                ">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group text-center m-t-20">
+                            <div >
+                                <button class="btn btn-primary btn-block btn-lg waves-effect waves-light btn-warning text-dark" type="submit">Login</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group row m-t-20 m-b-0">
+                            <div class="col-sm-12">
+                                <a href="#" class="text-muted">?Preset Password<i class="fa fa-lock" style="margin-right: 5px" ></i></a>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
             </div>
-            <h5 class="font-18" style="text-align: left">The Unified Interface of Mobile Payment Service Providers – Mobile Wallet</h5>
-            <div style="text-align: left">
-                <img src="assets/images/admin-icon@2x.png">
-                <bold>Login</bold>
-            </div>
-            <form class="form-horizontal m-t-20" action="jp-admin.html" style="text-align: left">
-
-                <div class="form-group">
-                    <div >
-                        <label>Username</label>
-                        <input class="form-control" title="Enter your username" type="text" pattern="\w+" name="username" placeholder="username" style="text-align: left" >
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div >
-                        <label>Password</label>
-                        <input class="form-control" placeholder="password"style="text-align: left" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
-                            this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
-                            if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
-                            ">
-                    </div>
-                </div>
-
-
-                <div class="form-group text-center m-t-20">
-                    <div >
-                        <button class="btn btn-primary btn-block btn-lg waves-effect waves-light btn-warning text-dark" type="submit">Login</button>
-                    </div>
-                </div>
-
-                <div class="form-group row m-t-20 m-b-0">
-                    <div class="col-sm-12">
-                        <a href="#" class="text-muted">?Preset Password<i class="fa fa-lock" style="margin-right: 5px" ></i></a>
-                    </div>
-
-                </div>
-            </form>
         </div>
-
     </div>
-    <!-- Footer -->
     <footer class="footer">
         JomoPay 2019 All Right Reserved ©
     </footer>
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.min.js"></script>
 
-    <!-- End Footer -->
-</div>
-<!-- END wrapper -->
-
-<!-- jQuery  -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/metismenu.min.js"></script>
-<script src="assets/js/jquery.slimscroll.js"></script>
-<script src="assets/js/waves.min.js"></script>
-
-<!-- App js -->
-<script src="assets/js/app.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
 
 
 

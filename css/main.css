@@ -551,7 +551,7 @@ background-color: #ffc107;
 }
 @media only screen and (max-width: 600px) {
   .s-header {
-    height: 90px;
+    /* height: 90px; */
     top: 12px;
   }
 
