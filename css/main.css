@@ -980,8 +980,10 @@ dd {
     height: 200px;
 }
 .content{
+    /* max-width: 80%; */
     display: block;
     clear: both;
+    padding-top: 20%;
     position: relative;
 }
 
@@ -5019,9 +5021,9 @@ padding: unset !important;
 @media (max-width: 800px){
   .container{
   margin-top: 84px;
-  width: 539px !important;
+  /* width: 539px !important;
       margin-right: -57px;
-  }
+  } */
   .btnO{
     margin-right: -20px;
 
@@ -5095,17 +5097,18 @@ font-size: 13.6px;;
     .btnT {
         margin-left: 63px !important ;
     }
-     }
-     @media (max-width: 997px){
+}
+@media (max-width: 997px){
     .btnT {
         margin-left: -185px ;
     }
-     }
-     .btnT{
-     margin-left: -381px ;
-     margin-top: 21px;}
-     .list-group-item.active {
-        color: #596066 !important;
-        background-color: #bbb !important;
-        border: unset !important;
-        }
+}
+.btnT{
+    margin-left: -381px ;
+    margin-top: 21px;
+}
+.list-group-item.active {
+    color: #596066 !important;
+    background-color: #bbb !important;
+    border: unset !important;
+}

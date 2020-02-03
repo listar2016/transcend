@@ -8,8 +8,12 @@
     position: initial;
 }
 .content {
+    width: calc( 100% - 270px );
     margin: 2rem auto;
     padding: 0px 5px;
+}
+.toggled .content {
+    width: calc( 100% - 50px );
 }
 
 .bg-custom {
@@ -47,4 +51,9 @@
     margin-right: unset !important;
     color: #212529;
     overflow-x: auto;
+}
+.list-group-item.active {
+    color: #596066 !important;
+    background-color: #bbb !important;
+    border: unset !important;
 }

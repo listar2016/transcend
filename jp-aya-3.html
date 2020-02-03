@@ -11,30 +11,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/simple-sidebar.css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="css/fix-style.css">
 <style>
-    .collapse:not(.show) {
-            display: list-item;
-        }
-        ul .collapse .timepicker{
-            display: none;
-        }
-        .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: -37px;
-    margin-left: auto;
-}
+    
 
  @media (max-width: 1080px) {
-/*   .container .card-body .row {
-    display: block;
-  }
-  .container .card-body .row .col-sm-6 {
-    max-width: 100%;
-  } */
 
 
   .phoneInput {
@@ -324,30 +305,21 @@
 
                                                 </div>
                                                 <div class="col-md-8 m-b-20">
-                                                    <div class="input-group date datetimepicker" >
-                                                            <input type="text" class="form-control"  placeholder="mm/dd/yyyy" >
-                                                            <div class="input-group-append bg-custom b-0"><span class="input-group-text add-on"><i class="mdi mdi-calendar" data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span></div>
-                                                        </div><!-- input-group -->
+                                                    <input id="datepicker1" placeholder="mm/dd/yyyy"/>
                                                 </div>
                                                 <div class="col-md-4 m-b-20">
                                                     <label for="example-text-input" class="col-form-label"> Document Expiry Date </label>
 
                                                 </div>
                                                 <div class="col-md-8 m-b-20">
-                                                    <div class="input-group date datetimepicker">
-                                                            <input type="text" class="form-control"  placeholder="mm/dd/yyyy" >
-                                                            <div class="input-group-append bg-custom b-0"><span class="input-group-text add-on"><i class="mdi mdi-calendar" data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span></div>
-                                                        </div><!-- input-group -->
+                                                    <input id="datepicker2" placeholder="mm/dd/yyyy"/>
                                                 </div>
                                                 <div class="col-md-4 m-b-20">
                                                     <label for="example-text-input" class="col-form-label"> Birthday </label>
 
                                                 </div>
                                                 <div class="col-md-8 m-b-20">
-                                                    <div class="input-group date datetimepicker">
-                                                            <input type="text" class="form-control"  placeholder="mm/dd/yyyy" >
-                                                            <div class="input-group-append bg-custom b-0"><span class="input-group-text add-on"><i class="mdi mdi-calendar" data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span></div>
-                                                        </div><!-- input-group -->
+                                                    <input id="datepicker3" placeholder="mm/dd/yyyy"/>
                                                 </div>
 
                                                 <label class="col-sm-4 col-form-label">Gender  </label>
@@ -548,17 +520,18 @@
 
     <script src="js/main.js"></script>
     <!-- DatePicker -->
-    <script type="text/javascript"
-    src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
-    </script>
-    <script type="text/javascript"
-    src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
-    </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />    
     <script type="text/javascript">
-    $('.datetimepicker').datetimepicker({
-
-    });
+        $('#datepicker1').datepicker({
+                uiLibrary: 'bootstrap4'
+        });
+        $('#datepicker2').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+        $('#datepicker3').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
     </script>
     <script>
         $("#menu-toggle").click(function(e) {

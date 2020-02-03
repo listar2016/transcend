@@ -10,5 +10,6 @@
 .login-page {
     max-width: 400px;    
     width: 100%;
-    margin: auto;
+    margin-left: 50px;
+    float: left;
 }
